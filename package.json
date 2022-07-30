@@ -12,7 +12,7 @@
     "build": "parcel build"
   },
   "author": "Gabriel Galatti",
-  "license": "MIT",
+  "license": "MIT License",
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
