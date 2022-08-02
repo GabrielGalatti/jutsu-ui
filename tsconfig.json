@@ -8,7 +8,8 @@
     "jsx": "react-native",
     "skipLibCheck": true,
     "noImplicitAny": false,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "moduleResolution": "node",
   },
   "include": ["lib/**/*"],
   "exclude": ["node_modules"]

@@ -1,4 +1,7 @@
-import styled from "styled-components/native";
+import { ComponentClass } from "react";
+import { TouchableOpacityProps } from "react-native";
+import { StyledComponent } from "styled-components";
+import styled, { DefaultTheme } from "styled-components/native";
 
 import {
   MarginAndPadding,
@@ -19,7 +22,12 @@ type ButtonProps = Partial<
   MarginAndPadding & ColorAndBg & Layout & Flexbox & Border & Typography
 >;
 
-export const Button = styled.TouchableOpacity<ButtonProps>((props) => ({
+export const Button: StyledComponent<
+  ComponentClass<TouchableOpacityProps, any>,
+  DefaultTheme,
+  ButtonProps,
+  never
+> = styled.TouchableOpacity<ButtonProps>((props) => ({
   ...getMarginAndPaddingProps(props),
   ...getFlexboxProps(props),
   ...getLayoutProps(props),

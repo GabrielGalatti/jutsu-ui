@@ -1,4 +1,7 @@
-import styled from "styled-components/native";
+import { ComponentClass } from "react";
+import { View, ViewComponent, ViewProps } from "react-native";
+import { StyledComponent } from "styled-components";
+import styled, { DefaultTheme } from "styled-components/native";
 import {
   MarginAndPadding,
   ColorAndBg,
@@ -16,7 +19,12 @@ type BoxProps = Partial<
   MarginAndPadding & ColorAndBg & Layout & Flexbox & Border
 >;
 
-export const Box = styled.View<BoxProps>((props) => ({
+export const Box: StyledComponent<
+  ComponentClass<ViewProps, any>,
+  DefaultTheme,
+  BoxProps,
+  never
+> = styled.View<BoxProps>((props) => ({
   ...getMarginAndPaddingProps(props),
   ...getFlexboxProps(props),
   ...getLayoutProps(props),
@@ -26,7 +34,12 @@ export const Box = styled.View<BoxProps>((props) => ({
 
 type FlexProps = Partial<MarginAndPadding & Layout & Flexbox>;
 
-export const Flex = styled.View<FlexProps>((props) => ({
+export const Flex: StyledComponent<
+  ComponentClass<ViewProps, any>,
+  DefaultTheme,
+  FlexProps,
+  never
+> = styled.View<FlexProps>((props) => ({
   ...getMarginAndPaddingProps(props),
   ...getFlexboxProps(props),
   ...getLayoutProps(props),
