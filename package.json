@@ -1,6 +1,6 @@
 {
   "name": "jutsu-ui",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Chakra make jutsus and jutsus make UI",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
@@ -14,7 +14,6 @@
   "author": "Gabriel Galatti",
   "license": "MIT License",
   "peerDependencies": {
-    "react": "*",
     "react-native": "*",
     "styled-components": "*"
   },
@@ -27,8 +26,5 @@
     "parcel": "^2.6.2",
     "styled-components": "^5.3.5",
     "typescript": "^4.7.4"
-  },
-  "dependencies": {
-    "react-native": "^0.69.3"
   }
 }
