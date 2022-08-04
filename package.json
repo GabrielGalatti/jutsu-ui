@@ -1,6 +1,6 @@
 {
   "name": "jutsu-ui",
-  "version": "1.0.4",
+  "version": "1.0.52",
   "description": "Chakra make jutsus and jutsus make UI",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
