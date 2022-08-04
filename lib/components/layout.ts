@@ -1,5 +1,5 @@
 import { ComponentClass } from "react";
-import { View, ViewComponent, ViewProps } from "react-native";
+import { View, ViewProps } from "react-native";
 import { StyledComponent } from "styled-components";
 import styled, { DefaultTheme } from "styled-components/native";
 import {
