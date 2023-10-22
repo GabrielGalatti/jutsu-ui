@@ -1,7 +1,6 @@
 import { ComponentClass } from "react";
 import { TextInputProps } from "react-native";
-import { StyledComponent } from "styled-components";
-import styled, { DefaultTheme } from "styled-components/native";
+import styled from "styled-components/native";
 
 import {
   MarginAndPadding,
@@ -22,16 +21,12 @@ export type InputProps = Partial<
   MarginAndPadding & ColorAndBg & Layout & Flexbox & Typography & Border
 >;
 
-export const Input: StyledComponent<
-  ComponentClass<TextInputProps, any>,
-  DefaultTheme,
-  InputProps,
-  never
-> = styled.TextInput<InputProps>((props) => ({
-  ...getMarginAndPaddingProps(props),
-  ...getColorAndBgProps(props),
-  ...getLayoutProps(props),
-  ...getFlexboxProps(props),
-  ...getBorderProps(props),
-  ...getTypographyProps(props),
-}));
+export const Input: ComponentClass<TextInputProps & InputProps> =
+  styled.TextInput((props: InputProps) => ({
+    ...getMarginAndPaddingProps(props),
+    ...getColorAndBgProps(props),
+    ...getLayoutProps(props),
+    ...getFlexboxProps(props),
+    ...getBorderProps(props),
+    ...getTypographyProps(props),
+  }));

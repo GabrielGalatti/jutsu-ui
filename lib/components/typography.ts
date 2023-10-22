@@ -1,5 +1,4 @@
 import styled, { DefaultTheme } from "styled-components/native";
-import { StyledComponent } from "styled-components";
 import { TextProps as ReactNativeTextProps } from "react-native";
 
 import {
@@ -14,13 +13,9 @@ import { ComponentClass } from "react";
 
 export type TextProps = Partial<Typography & MarginAndPadding & ColorAndBg>;
 
-export const Text: StyledComponent<
-  ComponentClass<ReactNativeTextProps, any>,
-  DefaultTheme,
-  TextProps,
-  never
-> = styled.Text<TextProps>((props) => ({
-  ...getTypographyProps(props),
-  ...getMarginAndPaddingProps(props),
-  ...getColorAndBgProps(props),
-}));
+export const Text: ComponentClass<ReactNativeTextProps & TextProps> =
+  styled.Text((props: TextProps) => ({
+    ...getTypographyProps(props),
+    ...getMarginAndPaddingProps(props),
+    ...getColorAndBgProps(props),
+  }));

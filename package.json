@@ -1,6 +1,6 @@
 {
   "name": "jutsu-ui",
-  "version": "1.0.52",
+  "version": "2.0.0",
   "description": "Chakra make jutsus and jutsus make UI",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
@@ -18,13 +18,13 @@
     "styled-components": "*"
   },
   "devDependencies": {
-    "@parcel/packager-ts": "2.6.2",
-    "@parcel/transformer-typescript-tsc": "^2.6.2",
-    "@parcel/transformer-typescript-types": "2.6.2",
-    "@types/styled-components": "^5.1.25",
-    "@types/styled-components-react-native": "^5.1.3",
-    "parcel": "^2.6.2",
-    "styled-components": "^5.3.5",
-    "typescript": "^4.7.4"
+    "@parcel/packager-ts": "2.10.0",
+    "@parcel/transformer-typescript-tsc": "2.10.0",
+    "@parcel/transformer-typescript-types": "2.10.0",
+    "@types/styled-components": "5.1.29",
+    "@types/styled-components-react-native": "5.2.4",
+    "parcel": "2.10.0",
+    "styled-components": "6.1.0",
+    "typescript": "5.2.2"
   }
 }
